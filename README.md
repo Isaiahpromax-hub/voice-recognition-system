@@ -30,24 +30,24 @@ This is a **prototyping version** of an Embedded Speech Recognition System desig
 
 ## Key Features & Technologies
 
-- **Sampling Rate**: 8 kHz (standard for embedded speech)
-- **Feature Extraction**: 13 MFCC coefficients
-- **Voice Activity Detection (VAD)**: Energy-based silence trimming
-- **Template Matching**: Euclidean distance with sliding window support
-- **Windowing Strategy**: Divide-and-Conquer (recursive) approach for feature extraction
-- **Testing Modes**:
-  - Live microphone input with real-time recognition
-  - Simulated audio test for offline validation
-- **Recurrence Relation Analysis**: Included for Divide-and-Conquer windowing
+**Sampling Rate**: 8 kHz (standard for embedded speech)
+**Feature Extraction**: 13 MFCC coefficients
+**Voice Activity Detection (VAD)**: Energy-based silence trimming
+**Template Matching**: Euclidean distance with sliding window support
+**Windowing Strategy**: Divide-and-Conquer (recursive) approach for feature extraction
+**Testing Modes**:
+Live microphone input with real-time recognition
+Simulated audio test for offline validation
+**Recurrence Relation Analysis**: Included for Divide-and-Conquer windowing
 
 
 ## System Architecture
 
-- Records audio at 8 kHz using PC microphone
-- Applies VAD to remove silence
-- Extracts features using Divide-and-Conquer windowing + MFCC
-- Compares the unknown utterance with stored templates using Euclidean distance
-- Displays the recognized command with distance visualization
+Records audio at 8 kHz using PC microphone
+Applies VAD to remove silence
+Extracts features using Divide-and-Conquer windowing + MFCC
+Compares the unknown utterance with stored templates using Euclidean distance
+Displays the recognized command with distance visualization
 
 ## How to Run
 
