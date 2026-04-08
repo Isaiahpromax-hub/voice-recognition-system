@@ -43,6 +43,7 @@ This is a **prototyping version** of an Embedded Speech Recognition System desig
 **Testing Modes**:
 
 Live microphone input with real-time recognition
+
 Simulated audio test for offline validation
 
 **Recurrence Relation Analysis**: Included for Divide-and-Conquer windowing
