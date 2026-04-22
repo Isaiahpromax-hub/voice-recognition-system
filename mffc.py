@@ -17,6 +17,14 @@ import os
 import glob
 import librosa
 
+
+try:
+    import sounddevice as sd
+except ImportError:
+    print("Install sounddevice: pip install sounddevice")
+    exit(1)
+
+
 # ====================== CONFIGURATION ======================
 fs = 8000
 n_mfcc = 13
