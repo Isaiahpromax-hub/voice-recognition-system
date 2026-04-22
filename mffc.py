@@ -261,7 +261,7 @@ def test_live_euclidean(use_dac=True):
 # ====================== SIMULATED AUDIO TEST  ======================
 def test_simulated(use_dac=True):
     """
-    Simulated test with synthetic audio to demonstrate feature extraction and temolated matching without needing live recording.
+    Simulated test with synthetic audio to demonstrate feature extraction and template matching without needing live recording.
     """
     print("\n" + "="*60)
     print("WEEK 4: SIMULATED AUDIO TEST")
