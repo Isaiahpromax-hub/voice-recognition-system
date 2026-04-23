@@ -17,12 +17,18 @@ This is a complete offline speech recognition system designed for smart home aut
 
 ### Key Features
 
-**Offline Operation**  No internet required - runs completely locally 
+**Offline Operation**  No internet required - runs completely locally
+
 **Real-time Recognition**  Processes speech as you speak 
+
 **WAV File Support**  Test with pre-recorded audio files 
+
 **DTW Algorithm**  Handles different speaking speeds 
+
 **Memory Optimized**  DTW uses only 2 rows (95% memory saving) 
+
 **Accuracy Comparison**  Euclidean vs DTW side-by-side 
+
 **Trade-off Analysis**  Template size, fixed vs float analysis 
 
 
