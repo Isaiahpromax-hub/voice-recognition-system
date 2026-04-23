@@ -4,11 +4,11 @@ EMBEDDED SPEECH RECOGNITION SYSTEM
 WEEK 6: FINAL IMPLEMENTATION (Euclidean + DTW + Divide-and-Conquer)
 
 Requirements Met:
-- Euclidean distance between unknown utterance and templates (Week 4)
+- Euclidean distance between unknown utterance and templates 
 - Divide-and-Conquer used for FEATURE EXTRACTION / WINDOWING
 - Clean initial feature extraction code with simulated audio
 - Recurrence relation analysis included
-- Dynamic Time Warping (DTW) implementation (Week 6)
+- Dynamic Time Warping (DTW) implementation 
 - Accuracy comparison between Euclidean and DTW
 - Press 'q' to exit live recognition modes
 ================================================================================
@@ -95,7 +95,7 @@ def get_dac_frame_positions(audio, start, end, frame_size=FRAME_SIZE, positions=
 def extract_mfcc_features(audio, sr=fs, n_mfcc=13, use_dac=True):
     """
     INITIAL FEATURE EXTRACTION FUNCTION
-    Supports Divide-and-Conquer windowing as required
+    Supports Divide-and-Conquer windowing 
     """
     if len(audio) < FRAME_SIZE:
         return np.zeros((1, n_mfcc), dtype=np.float32)
@@ -138,7 +138,7 @@ def extract_mfcc_features(audio, sr=fs, n_mfcc=13, use_dac=True):
 
 def divide_conquer_windowing_demo(audio, start, end, frame_size=256, features=None):
     """
-    Pure Divide-and-Conquer for energy + ZCR (demonstration only)
+    Pure Divide-and-Conquer for energy + ZCR 
     Shows the recursive algorithm concept without MFCC complexity
     """
     if features is None:
@@ -158,7 +158,7 @@ def divide_conquer_windowing_demo(audio, start, end, frame_size=256, features=No
     return features
 
 
-# ====================== EUCLIDEAN DISTANCE (WEEK 4) ======================
+# ====================== EUCLIDEAN DISTANCE  ======================
 def euclidean_distance_mfcc(seq1, seq2):
     """
     Euclidean distance with sliding window support
@@ -185,7 +185,7 @@ def euclidean_distance_mfcc(seq1, seq2):
         return min_dist
 
 
-# ====================== DYNAMIC TIME WARPING (WEEK 6) ======================
+# ====================== DYNAMIC TIME WARPING  ======================
 def dtw_distance(seq1, seq2):
     """
     Dynamic Time Warping distance between two MFCC sequences.
@@ -276,7 +276,7 @@ def load_templates():
 
 
 def record_templates(use_dac=True):
-    """Record 3 templates for each of the 10 commands"""
+    """Record 1 template for each of the 10 commands"""
     print("\n" + "="*60)
     print("RECORD TEMPLATES (using Divide-and-Conquer)")
     print("="*60)
@@ -298,7 +298,7 @@ def record_templates(use_dac=True):
             print("Failed: Audio too short")
 
 
-# ====================== LIVE RECOGNITION (WEEK 4 - EUCLIDEAN) ======================
+# ====================== LIVE RECOGNITION (EUCLIDEAN) ======================
 def test_live_euclidean(use_dac=True):
     """Week 4: Live recognition using Euclidean distance - Press 'q' to exit"""
     print("\n" + "="*60)
@@ -347,7 +347,7 @@ def test_live_euclidean(use_dac=True):
             else:
                 print("No speech detected.\n")
             
-            # Ask user if they want to continue
+           
             choice = input("Press Enter to test another command, or 'q' to quit: ").strip().lower()
             if choice == 'q':
                 print("\nReturning to main menu...")
@@ -361,7 +361,7 @@ def test_live_euclidean(use_dac=True):
             break
 
 
-# ====================== LIVE RECOGNITION (WEEK 6 - DTW) ======================
+# ====================== LIVE RECOGNITION (DTW) ======================
 def test_live_dtw(use_dac=True):
     """Week 6: Live recognition using Dynamic Time Warping - Press 'q' to exit"""
     print("\n" + "="*60)
@@ -413,7 +413,7 @@ def test_live_dtw(use_dac=True):
             else:
                 print("No speech detected.\n")
             
-            # Ask user if they want to continue
+            # Asks user if they want to continue
             choice = input("Press Enter to test another command, or 'q' to quit: ").strip().lower()
             if choice == 'q':
                 print("\nReturning to main menu...")
@@ -430,7 +430,7 @@ def test_live_dtw(use_dac=True):
 # ====================== ACCURACY COMPARISON (WEEK 6) ======================
 def compare_euclidean_vs_dtw():
     """
-    Week 6 Deliverable: Compare Euclidean vs DTW accuracy
+    Week 6 deliverable: Compare Euclidean vs DTW accuracy
     Records test samples and computes accuracy metrics
     """
     print("\n" + "="*60)
@@ -550,7 +550,7 @@ def test_simulated(use_dac=True):
     """
     Simulated test with synthetic audio to demonstrate feature extraction 
     and template matching without needing live recording.
-    Week 4 Deliverable requirement.
+
     """
     print("\n" + "="*60)
     print("WEEK 4: SIMULATED AUDIO TEST")
@@ -575,7 +575,7 @@ def test_simulated(use_dac=True):
     
     # Pure Divide-and-Conquer demo (Energy + ZCR)
     print("\n" + "-"*50)
-    print("PURE DIVIDE-AND-CONQUER WINDOWING DEMO")
+    print("DIVIDE-AND-CONQUER WINDOWING DEMO")
     print("-"*50)
     
     dc_features = divide_conquer_windowing_demo(test_audio, 0, len(test_audio))
