@@ -73,14 +73,11 @@ The system recognizes commonly used **10 smart home commands**:
 
 ##  Algorithms Implemented
 
-### Week 4: Euclidean Distance
+###  Euclidean Distance
 Distance = √( Σ (aᵢ - bᵢ)² )
 
 
-### Week 6: Dynamic Time Warping (DTW)
-D[i][j] = cost(i,j) + min(D[i-1][j], D[i][j-1], D[i-1][j-1])
-
-text
+###  Dynamic Time Warping (DTW)
 - Handles variations in speaking speed
 - Memory-optimized: only stores 2 rows (O(m) space)
 - Improved accuracy
