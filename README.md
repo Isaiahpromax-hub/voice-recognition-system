@@ -15,8 +15,8 @@ KABWOKO ENOCH 2401600225
 This is a complete offline speech recognition system designed for smart home automation targeting elderly users. The system recognizes 10 voice commands using template matching with both Euclidean distance  and Dynamic Time Warping (DTW) algorithms.
 
 
-### Key Features
 
+### Key Features
 **Offline Operation**  No internet required - runs completely locally
 
 **Real-time Recognition**  Processes speech as you speak 
@@ -33,8 +33,9 @@ This is a complete offline speech recognition system designed for smart home aut
 
 
 
-## System Requirements
 
+
+## System Requirements
 ### Hardware (Minimum)
 - Computer with microphone (for live recognition)
 
