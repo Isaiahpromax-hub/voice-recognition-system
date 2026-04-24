@@ -5,12 +5,7 @@ FINAL IMPLEMENTATION
 
 
 
-REQUIREMENTS MET:
-==================== WEEK 4 ====================
-- Euclidean distance between unknown utterance and templates
-- Divide-and-Conquer used for FEATURE EXTRACTION / WINDOWING
-- Clean initial feature extraction code with simulated audio
-- Recurrence relation analysis included
+
 
 """
 
